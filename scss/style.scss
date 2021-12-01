@@ -1,0 +1,142 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'nosotros-page.scss';
+@import 'blog-page.scss';
+@import 'consultoria-page.scss';
+@import 'contacto-page.scss';
+
+/*Reset | 1rem = 10px*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;                               
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Global styles*/
+body {
+    font-family: $fuenteParrafos;
+    font-size: 1.6rem;
+    line-height: 2;
+    color: $blanco;
+    background-color: $backgroundColor;
+}
+
+body::-webkit-scrollbar { width: 1.2rem;}       
+
+body::-webkit-scrollbar-thumb {                 
+    background-color: $blanco;
+    border-radius: $borderRadius;
+}
+
+a {
+    color: $blanco;
+    text-decoration: none;
+}
+
+h1, h2 { font-family: $fuenteTitulos;}
+
+p { font-family: $fuenteParrafos;}
+
+main {
+    background-color: $blanco;
+    padding-bottom: 3.5rem;
+    border-radius: $borderRadius;
+}
+
+/*Main style | index.html*/
+
+.contenedor-main { 
+    border-radius: $borderRadius;
+    margin: 1rem;
+
+    .h2-main {
+        text-align: center;
+        color: $negro;
+        padding: $padding;
+        font-size: 3rem;
+    }
+    
+    .cursos {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        background-color: $backgroundColor;
+        border-radius: $borderRadius;
+        margin-bottom: 1.3rem;
+
+        .cursos__h3, .cursos__p {
+            text-align: center;
+        }
+
+        .cursos__p--span {
+            color: $verde;
+            text-transform: uppercase;
+            margin-left: .3rem;
+            font-weight: bolder;
+        }
+
+        .cursos__img {
+            width: 60%;
+            height: 30rem;
+            border-radius: $borderRadius;
+            align-self: center;
+            margin: 3rem;
+            margin-top: 4rem;
+        }
+
+        .cursos__boton {
+            margin: 1rem auto;
+            background-color: $colorBotones;
+            color: $negro;
+            border-radius: $bordesBotones;
+            padding: $paddingBoton;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            text-transform: uppercase;    
+        }
+
+        .cursos__boton:hover { cursor:pointer;}
+    }
+    
+    @media (min-width: 768px) {                                           
+        .contenedor-cursos {
+            display: flex;
+            padding: 1.5rem;   
+        }
+    
+        .cursos {
+            margin: 1.5rem;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

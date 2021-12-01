@@ -1,0 +1,60 @@
+.h2-main-consultoria {
+    font-family: $fuenteTitulos;
+    color: $negro;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    text-transform: uppercase;
+    margin: 3rem;
+}
+
+.contenedor-main-consultoria {
+    margin: 2rem;
+    background-color: $gris;
+    padding: 1.7rem;
+    border-radius: $borderRadius;
+}
+
+@media (min-width: 1200px) {                        
+    .contenedor-main-consultoria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 1.2rem;
+        row-gap: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.img-consultoria {
+    border-radius: $borderRadius;
+    width: 100%;
+}
+
+.h4-consultoria {
+    color: $backgroundColor;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+    padding: $padding;
+}
+
+.div-boton-consultoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-consultoria {
+   background-color: $colorBotones;
+   font-family: $fuenteTitulos;
+   color: $negro;
+   text-transform: uppercase;
+   font-weight: bolder;
+   font-size: 1.7rem;
+   padding: $padding;
+   border-radius: $borderRadius;
+   margin-top: 1.5rem;
+}

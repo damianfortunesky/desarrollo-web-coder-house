@@ -1,0 +1,57 @@
+.contenedor-main {
+    margin: 1rem;
+    border-radius: $borderRadius;
+}
+
+.h1-main-blog {
+    color: $negro;
+    font-family: $fuenteTitulos;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+@media (min-width: 1200px) {                             
+    .contenedor-secciones-blog {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.contenedor-img-blog {
+    padding: $padding;
+}
+
+.img-blog {
+    border-radius: $borderRadius;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.contenedor-texto-blog__h4 {
+    font-family: $fuenteTitulos;
+    font-size: 3rem;
+    color: $backgroundColor;
+    text-align: center;
+}
+
+.contenedor-texto-blog__p {
+    font-family: $fuenteParrafos;
+    color: $negro;
+    font-size: 2rem;
+    padding: $padding;
+}
+
+
+
+
+
+
+
+
+
+
+

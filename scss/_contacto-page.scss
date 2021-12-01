@@ -1,0 +1,107 @@
+.main-contacto {
+    background-color: $gris;
+    padding-top: 4rem;
+    margin: 1rem;
+    .h2-main {
+            font-family: $fuenteTitulos;
+            color: $backgroundColor;
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform:uppercase;
+            text-align: center;
+        }
+}
+    .contenedor-main-contacto {
+        background-image: url(../img/dolares.jpg);
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        border-radius: $borderRadius;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+
+        .formulario {
+            border: 0;
+            background-color: $backgroundColor;
+            width: 80%;
+            border-radius: $borderRadius;
+            margin: 4rem auto;
+
+            .campo-formulario {
+                margin:1rem;
+                padding: $padding; /*.8rem*/
+                border: 0;
+                display: grid;
+                grid-template-columns: 30% 70%;
+                text-align: center;
+                gap: .5rem;
+
+                .campo-formulario__label {
+                    grid-column: 1 / 2;
+                    font-family: $fuenteParrafos;
+                    font-weight: bolder;
+                    font-size: 2rem;
+                    color: $blanco;
+                    padding: $padding;
+                }
+                
+                .campo-formulario__input {
+                    grid-column: 2 / 4;
+                    width: 100%;
+                    padding: $padding;
+                    border-radius: $borderRadius;
+                }
+
+                .textarea-contacto {
+                    overflow: auto;
+                    grid-column: 2 / 4;
+                    border-radius: $borderRadius;
+                    width: 100%;
+                    resize: none;
+                    padding: .5rem;
+                }
+
+                .textarea-contacto::-webkit-scrollbar {
+                    background-color: $blanco;
+                    border-radius: $borderRadius;
+                    width: 1rem;
+                }
+                
+                .textarea-contacto::placeholder {
+                    font-size: 1.8rem;
+                    padding: .2rem .5rem;
+                }
+
+                .boton-formulario {
+                    background-color: $blanco;
+                    color: $backgroundColor;
+                    border-radius: $borderRadius;
+                    border: 0;
+                    font-weight: bolder;
+                    font-size: 2rem;
+                    padding: $padding;
+                    margin: 1rem;
+                    grid-column: 2 / 4;
+                }
+                
+                .boton-formulario:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+@media (min-width: 1200px) {
+    .contenedor-main-contacto {                                
+        width: 80%;
+        margin: 5rem auto;        
+    }
+
+    .formulario {
+        width: 40%;
+    }
+
+} 
+
