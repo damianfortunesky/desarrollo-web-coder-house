@@ -8,10 +8,17 @@
 .contenedor-footer-1 {
     grid-column: 1 / 2;
     margin: $margin;
+    margin-top: 3rem;
     .contenedor-footer-1__h2 {
         text-align: center;
     }
 }
+
+@media (min-width: 900px) {                                          
+    .contenedor-footer-1 {              
+        margin-top: 2rem;
+    }  
+} 
 
 /*contenedor-footer-2 + img-logos */
 .contenedor-footer-2{
@@ -39,7 +46,11 @@
 .contenedor-footer-3 {
     grid-column: 3 / 4;
     margin: $margin;
+
     .contenedor-footer-3__copyright { text-align: center;}
+
+    .icono-copyright{ font-size: 1.3rem; }
+
     @media (min-width: 768px) {                                          
         .contenedor-footer-3__copyright {
             padding-top: .8rem;

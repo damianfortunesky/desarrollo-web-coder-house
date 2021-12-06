@@ -1,5 +1,5 @@
 .h2-main-consultoria {
-    font-family: $fuenteTitulos;
+    font-family: $fuenteSecundariaTitulos;
     color: $negro;
     font-size: 3rem;
     text-align: center;
@@ -41,20 +41,8 @@
     padding: $padding;
 }
 
-.div-boton-consultoria {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.boton-consultoria {
-   background-color: $colorBotones;
-   font-family: $fuenteTitulos;
-   color: $negro;
-   text-transform: uppercase;
-   font-weight: bolder;
-   font-size: 1.7rem;
-   padding: $padding;
-   border-radius: $borderRadius;
-   margin-top: 1.5rem;
+.boton-consultoria { 
+    font-size: 1.7rem;
+    text-transform: uppercase;
 }

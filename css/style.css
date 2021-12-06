@@ -60,9 +60,14 @@
 /*contenedor-footer-1*/
 .contenedor-footer-1 {
   grid-column: 1 / 2;
-  margin: 1rem; }
+  margin: 1rem;
+  margin-top: 3rem; }
   .contenedor-footer-1 .contenedor-footer-1__h2 {
     text-align: center; }
+
+@media (min-width: 900px) {
+  .contenedor-footer-1 {
+    margin-top: 2rem; } }
 
 /*contenedor-footer-2 + img-logos */
 .contenedor-footer-2 {
@@ -88,6 +93,8 @@
   margin: 1rem; }
   .contenedor-footer-3 .contenedor-footer-3__copyright {
     text-align: center; }
+  .contenedor-footer-3 .icono-copyright {
+    font-size: 1.3rem; }
   @media (min-width: 768px) {
     .contenedor-footer-3 .contenedor-footer-3__copyright {
       padding-top: .8rem; } }
@@ -138,7 +145,6 @@
 
 .h1-main-blog {
   color: #353535;
-  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   text-align: center;
   padding-top: 2rem; }
@@ -172,7 +178,7 @@
   padding: 1.5rem; }
 
 .h2-main-consultoria {
-  font-family: "Poppins", sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: #353535;
   font-size: 3rem;
   text-align: center;
@@ -208,28 +214,16 @@
   font-size: 2rem;
   padding: 1.5rem; }
 
-.div-boton-consultoria {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
 .boton-consultoria {
-  background-color: #f7ede2;
-  font-family: "Poppins", sans-serif;
-  color: #353535;
-  text-transform: uppercase;
-  font-weight: bolder;
   font-size: 1.7rem;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  margin-top: 1.5rem; }
+  text-transform: uppercase; }
 
 .main-contacto {
   background-color: #d8e2dc;
   padding-top: 4rem;
   margin: 1rem; }
   .main-contacto .h2-main {
-    font-family: "Poppins", sans-serif;
+    font-family: "PT Sans", sans-serif;
     color: #003245;
     font-size: 4rem;
     font-weight: bold;
@@ -335,7 +329,8 @@ a {
   text-decoration: none; }
 
 h1, h2 {
-  font-family: "Poppins", sans-serif; }
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700; }
 
 p {
   font-family: "Merriweather Sans", sans-serif; }
@@ -353,7 +348,7 @@ main {
     text-align: center;
     color: #353535;
     padding: 1.5rem;
-    font-size: 3rem; }
+    font-size: 4rem; }
   .contenedor-main .cursos {
     display: flex;
     flex-direction: column;
@@ -370,23 +365,11 @@ main {
       margin-left: .3rem;
       font-weight: bolder; }
     .contenedor-main .cursos .cursos__img {
-      width: 60%;
-      height: 30rem;
+      width: 50%;
+      height: 25rem;
       border-radius: 1rem;
       align-self: center;
-      margin: 3rem;
-      margin-top: 4rem; }
-    .contenedor-main .cursos .cursos__boton {
-      margin: 1rem auto;
-      background-color: #f7ede2;
-      color: #353535;
-      border-radius: 0.5rem;
-      padding: 0.8rem;
-      font-size: 1.5rem;
-      font-weight: bolder;
-      text-transform: uppercase; }
-    .contenedor-main .cursos .cursos__boton:hover {
-      cursor: pointer; }
+      margin: 3rem; }
   @media (min-width: 768px) {
     .contenedor-main .contenedor-cursos {
       display: flex;

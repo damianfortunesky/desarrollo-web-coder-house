@@ -37,7 +37,10 @@ a {
     text-decoration: none;
 }
 
-h1, h2 { font-family: $fuenteTitulos;}
+h1,h2 {
+    font-family: $fuenteSecundariaTitulos;
+    font-weight: 700;
+}
 
 p { font-family: $fuenteParrafos;}
 
@@ -57,7 +60,7 @@ main {
         text-align: center;
         color: $negro;
         padding: $padding;
-        font-size: 3rem;
+        font-size: 4rem;
     }
     
     .cursos {
@@ -81,26 +84,13 @@ main {
         }
 
         .cursos__img {
-            width: 60%;
-            height: 30rem;
+            width: 50%;
+            height: 25rem;
             border-radius: $borderRadius;
             align-self: center;
             margin: 3rem;
-            margin-top: 4rem;
         }
 
-        .cursos__boton {
-            margin: 1rem auto;
-            background-color: $colorBotones;
-            color: $negro;
-            border-radius: $bordesBotones;
-            padding: $paddingBoton;
-            font-size: 1.5rem;
-            font-weight: bolder;
-            text-transform: uppercase;    
-        }
-
-        .cursos__boton:hover { cursor:pointer;}
     }
     
     @media (min-width: 768px) {                                           
@@ -115,9 +105,6 @@ main {
         
     }
 }
-
-
-
 
 
 
