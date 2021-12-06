@@ -5,9 +5,14 @@
 
 .h1-main-blog {
     color: $negro;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
-    padding-top: 2rem;
+    padding: 3rem;
+    font-style: italic;
+}
+
+.contenedor-secciones-blog {
+    border: 1px solid $negro;
 }
 
 @media (min-width: 1200px) {                             
@@ -31,7 +36,7 @@
 }
 
 .contenedor-texto-blog__h4 {
-    font-family: $fuenteTitulos;
+    font-family:'PT Sans', sans-serif;
     font-size: 3rem;
     color: $backgroundColor;
     text-align: center;
@@ -39,7 +44,7 @@
 
 .contenedor-texto-blog__p {
     font-family: $fuenteParrafos;
-    color: $negro;
+    color: $backgroundColor;
     font-size: 2rem;
     padding: $padding;
 }

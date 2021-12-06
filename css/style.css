@@ -145,9 +145,13 @@
 
 .h1-main-blog {
   color: #353535;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
-  padding-top: 2rem; }
+  padding: 3rem;
+  font-style: italic; }
+
+.contenedor-secciones-blog {
+  border: 1px solid #353535; }
 
 @media (min-width: 1200px) {
   .contenedor-secciones-blog {
@@ -166,14 +170,14 @@
   margin: 0 auto; }
 
 .contenedor-texto-blog__h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 3rem;
   color: #003245;
   text-align: center; }
 
 .contenedor-texto-blog__p {
   font-family: "Merriweather Sans", sans-serif;
-  color: #353535;
+  color: #003245;
   font-size: 2rem;
   padding: 1.5rem; }
 
@@ -182,9 +186,9 @@
   color: #353535;
   font-size: 3rem;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem;
   text-transform: uppercase;
-  margin: 3rem; }
+  margin: 2rem; }
 
 .contenedor-main-consultoria {
   margin: 2rem;
