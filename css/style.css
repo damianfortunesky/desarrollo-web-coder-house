@@ -247,7 +247,7 @@
   .contenedor-main-contacto .formulario {
     border: 0;
     background-color: #003245;
-    width: 80%;
+    width: 60%;
     border-radius: 1rem;
     margin: 4rem auto; }
     .contenedor-main-contacto .formulario .campo-formulario {
@@ -293,7 +293,6 @@
         font-weight: bolder;
         font-size: 2rem;
         padding: 1.5rem;
-        margin: 1rem;
         grid-column: 2 / 4; }
       .contenedor-main-contacto .formulario .campo-formulario .boton-formulario:hover {
         cursor: pointer; }
