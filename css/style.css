@@ -184,10 +184,9 @@
 .h2-main-consultoria {
   font-family: "PT Sans", sans-serif;
   color: #353535;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   padding: 3rem;
-  text-transform: uppercase;
   margin: 2rem; }
 
 .contenedor-main-consultoria {
@@ -229,10 +228,10 @@
   .main-contacto .h2-main {
     font-family: "PT Sans", sans-serif;
     color: #003245;
-    font-size: 4rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center; }
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase; }
 
 .contenedor-main-contacto {
   background-image: url(../img/dolares.jpg);
