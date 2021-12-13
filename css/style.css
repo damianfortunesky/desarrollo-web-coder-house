@@ -31,11 +31,12 @@
   margin-top: 3rem; }
 
 .header-bloque2__h2 {
-  font-size: 3rem; }
+  font-size: 4rem; }
 
 .header-bloque2__p {
-  font-size: 1.6rem;
-  margin-top: 3rem; }
+  font-size: 2rem;
+  margin-top: 3rem;
+  font-weight: bolder; }
 
 /*Media Query | Header*/
 @media (min-width: 768px) {
@@ -47,8 +48,6 @@
     font-size: 3rem; }
   .header-bloque2 {
     margin-top: 10rem; }
-  .header-bloque2__h2 {
-    font-size: 4rem; }
   .header-bloque2__p {
     font-size: 2rem; } }
 
@@ -65,6 +64,10 @@
   .contenedor-footer-1 .contenedor-footer-1__h2 {
     text-align: center; }
 
+@media (max-width: 558px) {
+  .contenedor-footer-1__h2 {
+    margin-top: 2.5rem; } }
+
 @media (min-width: 900px) {
   .contenedor-footer-1 {
     margin-top: 2rem; } }
@@ -78,14 +81,19 @@
   align-items: center;
   margin: 1rem; }
 
+@media (max-width: 480px) {
+  .contenedor-footer-2 {
+    margin: 0;
+    padding: 0; } }
+
 .logos-img {
   width: 3rem;
   height: 3rem; }
 
 @media (min-width: 640px) {
   .logos-img {
-    width: 4rem;
-    height: 4rem; } }
+    width: 3.5rem;
+    height: 3.5rem; } }
 
 /*contenedor-footer-3*/
 .contenedor-footer-3 {
@@ -98,6 +106,10 @@
   @media (min-width: 768px) {
     .contenedor-footer-3 .contenedor-footer-3__copyright {
       padding-top: .8rem; } }
+
+@media (max-width: 480px) {
+  .contenedor-footer-3__copyright {
+    font-size: 1.5rem; } }
 
 .seccion-main__h2 {
   color: #353535;
@@ -218,8 +230,7 @@
   padding: 1.5rem; }
 
 .boton-consultoria {
-  font-size: 1.7rem;
-  text-transform: uppercase; }
+  font-size: 1.7rem; }
 
 .main-contacto {
   background-color: #d8e2dc;
@@ -375,6 +386,8 @@ main {
       border-radius: 1rem;
       align-self: center;
       margin: 3rem; }
+    .contenedor-main .cursos .botones-index {
+      font-size: 1.8rem; }
   @media (min-width: 768px) {
     .contenedor-main .contenedor-cursos {
       display: flex;
