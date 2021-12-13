@@ -4,103 +4,111 @@
     margin: 1rem;
     .h2-main {
             font-family: $fuenteSecundariaTitulos;
-            color: $backgroundColor;
+            color: $negro;
             font-size: 5rem;
-            font-weight: 400;
+            font-weight: 700;
             text-align: center;
-            text-transform: uppercase;
         }
 }
-    .contenedor-main-contacto {
-        background-image: url(../img/dolares.jpg);
-        background-position: center;
-        background-repeat: none;
-        background-size: cover;
+
+.contenedor-main-contacto {
+    background-image: url(../img/dolares.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border-radius: $borderRadius;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 5rem auto;
+
+    .formulario {
+        border: 0;
+        background-color: $backgroundColor;
+        width: 90%;
         border-radius: $borderRadius;
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin: 0 auto;
+        margin: 4rem auto;
 
-        .formulario {
+        .campo-formulario {
+            margin:1rem;
+            padding: $padding;
             border: 0;
-            background-color: $backgroundColor;
-            width: 60%;
-            border-radius: $borderRadius;
-            margin: 4rem auto;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            text-align: center;
+            gap: .5rem;
 
-            .campo-formulario {
-                margin:1rem;
-                padding: $padding; /*.8rem*/
+            .campo-formulario__label {
+                grid-column: 1 / 2;
+                font-family: $fuenteParrafos;
+                font-weight: bolder;
+                font-size: 2rem;
+                color: $blanco;
+                padding: $padding;
+            }
+                
+            .campo-formulario__input {
+                grid-column: 2 / 4;
+                width: 100%;
+                padding: $padding;
+                border-radius: $borderRadius;
+            }
+
+            .textarea-contacto {
+                overflow: auto;
+                grid-column: 2 / 4;
+                border-radius: $borderRadius;
+                width: 100%;
+                resize: none;
+                padding: .5rem;
+            }
+
+            .textarea-contacto::-webkit-scrollbar {
+                background-color: $blanco;
+                border-radius: $borderRadius;
+                width: 1rem;
+            }
+                
+            .textarea-contacto::placeholder {
+                font-size: 1.8rem;
+                padding: .2rem .5rem;
+            }
+
+            .boton-formulario {
+                background-color: $blanco;
+                color: $backgroundColor;
+                border-radius: $borderRadius;
                 border: 0;
-                display: grid;
-                grid-template-columns: 30% 70%;
-                text-align: center;
-                gap: .5rem;
-
-                .campo-formulario__label {
-                    grid-column: 1 / 2;
-                    font-family: $fuenteParrafos;
-                    font-weight: bolder;
-                    font-size: 2rem;
-                    color: $blanco;
-                    padding: $padding;
-                }
+                font-weight: bolder;
+                font-size: 2rem;
+                padding: $padding;
+                grid-column: 2 / 4;
+            }
                 
-                .campo-formulario__input {
-                    grid-column: 2 / 4;
-                    width: 100%;
-                    padding: $padding;
-                    border-radius: $borderRadius;
-                }
-
-                .textarea-contacto {
-                    overflow: auto;
-                    grid-column: 2 / 4;
-                    border-radius: $borderRadius;
-                    width: 100%;
-                    resize: none;
-                    padding: .5rem;
-                }
-
-                .textarea-contacto::-webkit-scrollbar {
-                    background-color: $blanco;
-                    border-radius: $borderRadius;
-                    width: 1rem;
-                }
-                
-                .textarea-contacto::placeholder {
-                    font-size: 1.8rem;
-                    padding: .2rem .5rem;
-                }
-
-                .boton-formulario {
-                    background-color: $blanco;
-                    color: $backgroundColor;
-                    border-radius: $borderRadius;
-                    border: 0;
-                    font-weight: bolder;
-                    font-size: 2rem;
-                    padding: $padding;
-                    grid-column: 2 / 4;
-                }
-                
-                .boton-formulario:hover {
-                    cursor: pointer;
-                }
+            .boton-formulario:hover {
+                cursor: pointer;
             }
         }
     }
+}
+
+@media (min-width: 768px) {
+    .contenedor-main-contacto {                                
+        width: 80%;
+        
+        .formulario {
+            width: 80%;
+        }       
+    }
+} 
 
 @media (min-width: 1200px) {
     .contenedor-main-contacto {                                
         width: 80%;
-        margin: 5rem auto;        
+        
+        .formulario {
+            width: 60%;
+        }
     }
-
-    .formulario {
-        width: 40%;
-    }
-
 } 
 

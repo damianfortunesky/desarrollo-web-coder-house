@@ -227,11 +227,10 @@
   margin: 1rem; }
   .main-contacto .h2-main {
     font-family: "PT Sans", sans-serif;
-    color: #003245;
+    color: #353535;
     font-size: 5rem;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase; }
+    font-weight: 700;
+    text-align: center; }
 
 .contenedor-main-contacto {
   background-image: url(../img/dolares.jpg);
@@ -241,18 +240,17 @@
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin: 0 auto; }
+  width: 95%;
+  margin: 5rem auto; }
   .contenedor-main-contacto .formulario {
     border: 0;
     background-color: #003245;
-    width: 60%;
+    width: 90%;
     border-radius: 1rem;
     margin: 4rem auto; }
     .contenedor-main-contacto .formulario .campo-formulario {
       margin: 1rem;
       padding: 1.5rem;
-      /*.8rem*/
       border: 0;
       display: grid;
       grid-template-columns: 30% 70%;
@@ -296,12 +294,17 @@
       .contenedor-main-contacto .formulario .campo-formulario .boton-formulario:hover {
         cursor: pointer; }
 
+@media (min-width: 768px) {
+  .contenedor-main-contacto {
+    width: 80%; }
+    .contenedor-main-contacto .formulario {
+      width: 80%; } }
+
 @media (min-width: 1200px) {
   .contenedor-main-contacto {
-    width: 80%;
-    margin: 5rem auto; }
-  .formulario {
-    width: 40%; } }
+    width: 80%; }
+    .contenedor-main-contacto .formulario {
+      width: 60%; } }
 
 /*Reset | 1rem = 10px*/
 html {
