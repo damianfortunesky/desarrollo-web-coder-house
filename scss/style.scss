@@ -86,14 +86,24 @@ main {
         .cursos__img {
             width: 50%;
             height: 25rem;
-            border-radius: $borderRadius;
+            border-radius: 2px;
             align-self: center;
             margin: 3rem;
         }
 
         .botones-index {
             font-size: 1.8rem;
+            border-radius: $borderRadius;
+            margin: 1rem;
+            border: none;
+            background-color: $celeste;
+            color: $blanco;
+
+            &:hover{
+                background-color: $verde;
+            }
         }
+        
     }
     
     @media (min-width: 768px) {                                           

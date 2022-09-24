@@ -41,5 +41,14 @@
 }
 
 .boton-consultoria { 
-    font-size: 1.7rem;
+    font-size: 2rem;
+    border-radius: $borderRadius;
+    margin: 1rem;
+    border: none;
+    background-color: $celeste;
+    color: $blanco;
+
+    &:hover{
+        background-color: $verde;
+    }
 }

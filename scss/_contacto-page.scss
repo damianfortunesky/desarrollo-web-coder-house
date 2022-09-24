@@ -3,12 +3,12 @@
     padding-top: 4rem;
     margin: 1rem;
     .h2-main {
-            font-family: $fuenteSecundariaTitulos;
-            color: $negro;
-            font-size: 5rem;
-            font-weight: 700;
-            text-align: center;
-        }
+        font-family: $fuenteSecundariaTitulos;
+        color: $negro;
+        font-size: 5rem;
+        font-weight: 700;
+        text-align: center;
+    }
 }
 
 .contenedor-main-contacto {
@@ -16,18 +16,18 @@
     background-position: center;
     background-repeat: none;
     background-size: cover;
-    border-radius: $borderRadius;
+    border-radius: $borderRadiusForm;
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 98%;
     margin: 5rem auto;
 
     .formulario {
         border: 0;
         background-color: $backgroundColor;
-        width: 90%;
-        border-radius: $borderRadius;
-        margin: 4rem auto;
+        width: 99%;
+        border-radius: $borderRadiusForm;
+        margin: 4rem auto 0 auto;
 
         .campo-formulario {
             margin:1rem;
@@ -51,13 +51,13 @@
                 grid-column: 2 / 4;
                 width: 100%;
                 padding: $padding;
-                border-radius: $borderRadius;
+                border-radius: $borderRadiusForm;
             }
 
             .textarea-contacto {
                 overflow: auto;
                 grid-column: 2 / 4;
-                border-radius: $borderRadius;
+                border-radius: $borderRadiusForm;
                 width: 100%;
                 resize: none;
                 padding: .5rem;
@@ -65,7 +65,7 @@
 
             .textarea-contacto::-webkit-scrollbar {
                 background-color: $blanco;
-                border-radius: $borderRadius;
+                border-radius: $borderRadiusForm;
                 width: 1rem;
             }
                 
@@ -77,7 +77,7 @@
             .boton-formulario {
                 background-color: $blanco;
                 color: $backgroundColor;
-                border-radius: $borderRadius;
+                border-radius: $borderRadiusForm;
                 border: 0;
                 font-weight: bolder;
                 font-size: 2rem;
@@ -94,10 +94,11 @@
 
 @media (min-width: 768px) {
     .contenedor-main-contacto {                                
-        width: 80%;
+        width: 98%;
         
         .formulario {
-            width: 80%;
+            width: 88%;
+            margin: 4rem auto 1rem auto;
         }       
     }
 } 

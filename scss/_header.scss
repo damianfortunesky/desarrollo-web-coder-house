@@ -6,10 +6,20 @@
     height: 45rem;
     padding: $padding;
     border-radius: $borderRadius;
-    margin: 1rem;    
+    margin: 1rem;
 }
+
 /* (header-bloque) = (header-bloque1 + header-bloque2) */
 .header-bloque { text-align: center;}
+
+.header-bloque1__navegacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-header {
+    font-size: 4rem;
+}
 
 /*header-bloque1*/
 .header-bloque1__h1:hover {
@@ -49,6 +59,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .header-bloque1__navegacion {
+        display: block;
+
     }
 
     .logo-header {
