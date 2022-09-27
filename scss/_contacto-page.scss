@@ -5,9 +5,10 @@
     .h2-main {
         font-family: $fuenteSecundariaTitulos;
         color: $negro;
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 700;
         text-align: center;
+        text-transform: uppercase;
     }
 }
 
@@ -52,6 +53,7 @@
                 width: 100%;
                 padding: $padding;
                 border-radius: $borderRadiusForm;
+                outline: none;
             }
 
             .textarea-contacto {
@@ -61,6 +63,7 @@
                 width: 100%;
                 resize: none;
                 padding: .5rem;
+                outline: none;
             }
 
             .textarea-contacto::-webkit-scrollbar {

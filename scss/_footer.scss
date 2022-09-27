@@ -11,6 +11,7 @@
     margin-top: 3rem;
     .contenedor-footer-1__h2 {
         text-align: center;
+        color:$negro;
     }
 }
 
@@ -61,7 +62,11 @@
     grid-column: 3 / 4;
     margin: $margin;
 
-    .contenedor-footer-3__copyright { text-align: center;}
+    .contenedor-footer-3__copyright {
+        text-align: center;
+        font-weight: 500;
+        color:$negro;
+    }
 
     .icono-copyright{ font-size: 1.3rem; }
 

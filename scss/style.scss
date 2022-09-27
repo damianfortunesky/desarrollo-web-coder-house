@@ -22,7 +22,7 @@ body {
     font-size: 1.6rem;
     line-height: 2;
     color: $blanco;
-    background-color: $backgroundColor;
+    background-color: $gris;
 }
 
 body::-webkit-scrollbar { width: 1.2rem;}       
@@ -61,6 +61,7 @@ main {
         color: $negro;
         padding: $padding;
         font-size: 4rem;
+        text-transform: uppercase;
     }
     
     .cursos {
